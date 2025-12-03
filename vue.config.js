@@ -14,7 +14,8 @@ module.exports = defineConfig({
     client: false,
     webSocketServer: false,    
     setupMiddlewares: (middlewares, devServer) => {
-      
+      // test ci-cd trigger
+
       if (!devServer) {
         throw new Error('webpack-dev-server is not defined');
       }
